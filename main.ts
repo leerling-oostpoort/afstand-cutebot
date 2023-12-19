@@ -3,10 +3,10 @@ radio.onReceivedNumber(function (receivedNumber) {
         cuteBot.motors(50, 50)
     }
     if (receivedNumber == 2) {
-        cuteBot.turnleft()
+        cuteBot.moveTime(cuteBot.Direction.left, 20, 1)
     }
     if (receivedNumber == 3) {
-        cuteBot.turnright()
+        cuteBot.moveTime(cuteBot.Direction.forward, 20, 1)
     }
     if (receivedNumber == 4) {
         cuteBot.moveTime(cuteBot.Direction.backward, 25, 2)
