@@ -1,18 +1,19 @@
 radio.onReceivedNumber(function (receivedNumber) {
     if (receivedNumber == 1) {
-        cuteBot.motors(50, 50)
+        cuteBot.motors(35, 43)
     }
     if (receivedNumber == 2) {
-        cuteBot.moveTime(cuteBot.Direction.left, 20, 1)
+        cuteBot.moveTime(cuteBot.Direction.left, 30, 0.4)
     }
     if (receivedNumber == 3) {
-        cuteBot.moveTime(cuteBot.Direction.forward, 20, 1)
+        cuteBot.stopcar()
+        cuteBot.moveTime(cuteBot.Direction.right, 30, 0.4)
     }
     if (receivedNumber == 4) {
-        cuteBot.moveTime(cuteBot.Direction.backward, 25, 2)
+        cuteBot.stopcar()
+    }
+    if (receivedNumber == 5) {
+        cuteBot.motors(-40, -32)
     }
 })
 radio.setGroup(1)
-basic.forever(function () {
-	
-})
